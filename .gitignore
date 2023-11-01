@@ -1,0 +1,20 @@
+# Ignore all files with a specific extension
+*.log
+*.bak
+
+# Ignore all files in a specific directory
+/bin/
+/obj/
+
+# Ignore a specific directory and its contents
+/logs/
+
+# Ignore all .vscode settings
+.vscode/
+
+# Ignore a file named "secrets.txt" at any directory level
+**/secrets.txt
+
+# Ignore all .suo and .user files (common with Visual Studio)
+*.suo
+*.user

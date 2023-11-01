@@ -1,0 +1,11 @@
+D:\Company\FPT\EC\MorkC#\Core\bin\Debug\net7.0\Core.deps.json
+D:\Company\FPT\EC\MorkC#\Core\bin\Debug\net7.0\Core.dll
+D:\Company\FPT\EC\MorkC#\Core\bin\Debug\net7.0\Core.pdb
+D:\Company\FPT\EC\MorkC#\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Company\FPT\EC\MorkC#\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+D:\Company\FPT\EC\MorkC#\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+D:\Company\FPT\EC\MorkC#\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\Company\FPT\EC\MorkC#\Core\obj\Debug\net7.0\Core.dll
+D:\Company\FPT\EC\MorkC#\Core\obj\Debug\net7.0\refint\Core.dll
+D:\Company\FPT\EC\MorkC#\Core\obj\Debug\net7.0\Core.pdb
+D:\Company\FPT\EC\MorkC#\Core\obj\Debug\net7.0\ref\Core.dll
