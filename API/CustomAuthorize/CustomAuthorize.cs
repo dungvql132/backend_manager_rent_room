@@ -39,7 +39,6 @@ namespace CustomAuthorizetion
 
             // Find the "Role" claim in the user's claims
             var roleClaim = context.HttpContext.User.FindFirst(ClaimTypes.Role);
-            System.Console.WriteLine("Role -----------------: "+roleClaim.Value);
 
             if (roleClaim != null)
             {

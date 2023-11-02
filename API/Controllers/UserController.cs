@@ -27,12 +27,43 @@ namespace test.Controllers
 
         [HttpGet]
         [ValidateModel]
-        [CustomAuthorize(Role.Staff, Role.Admin)]
-        public async Task<List<UserDTO>> Get()
+        [CustomAuthorize(Role.Staff, Role.Landlord, Role.Admin)]
+        public async Task<List<UserDTO>> GetAll([FromQuery] FilterUserDTO filterUserDTO)
         {
             // string email = User.FindFirst(ClaimTypes.Email).Value;
-            var users = await _userService.GetAllAsync();
-            return users;
+            string role = User.FindFirst(ClaimTypes.Role).Value;
+            string email = User.FindFirst(ClaimTypes.Email).Value;
+            if (role == ((int)Role.Admin).ToString())
+            {
+                var users = await _userService.GetAllAsync(filterUserDTO);
+                return users;
+            }
+            else
+            {
+                var users = await _userService.GetAllAsync(email);
+                return users;
+            }
+        }
+
+        [HttpGet]
+        [ValidateModel]
+        [Route("{id:Guid}")]
+        [CustomAuthorize(Role.Staff, Role.Landlord, Role.Admin)]
+        public async Task<UserDTO> Get([FromRoute] Guid id)
+        {
+            // string email = User.FindFirst(ClaimTypes.Email).Value;
+            string role = User.FindFirst(ClaimTypes.Role).Value;
+            string email = User.FindFirst(ClaimTypes.Email).Value;
+            if (role == ((int)Role.Admin).ToString())
+            {
+                var user = await _userService.GetAsync(id);
+                return user;
+            }
+            else
+            {
+                var user = await _userService.GetAsync(id, email);
+                return user;
+            }
         }
 
         [HttpPost]
@@ -74,7 +105,9 @@ namespace test.Controllers
                 if (userDTO.Email == email)
                 {
                     await _userService.UpdateAsync<UserUpdateDTO>(userUpdateDTO, id);
-                }else{
+                }
+                else
+                {
                     throw new UnauthorizedAccessException("Only update yourself");
                 }
             }
@@ -83,7 +116,7 @@ namespace test.Controllers
 
         [HttpDelete]
         [Route("{id:Guid}")]
-        [CustomAuthorize(Role.Staff, Role.Landlord, Role.Admin)]
+        [CustomAuthorize(Role.Admin)]
         public async Task<IActionResult> Delete([FromRoute] Guid id)
         {
             await _userService.DeleteAsync(id);

@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Data.Enum;
+using DataLayer.Filter;
 using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLayer.DTOs
@@ -31,5 +32,10 @@ namespace BusinessLayer.DTOs
         [Column(TypeName = "int")]
         public Role? Role { get; set; }
         public Guid? AddressId { get; set; }
+    }
+
+    public class FilterUserDTO : FilterUser
+    {
+
     }
 }

@@ -19,7 +19,7 @@ namespace BusinessLayer.Services
             _mapper = mapper;
         }
 
-        public async Task<TDTO> AddAsync(TDTO item)
+        public virtual async Task<TDTO> AddAsync(TDTO item)
         {
             T data = _mapper.Map<T>(item);
             await _dataRepository.Add(data);
@@ -27,26 +27,26 @@ namespace BusinessLayer.Services
             return _mapper.Map<TDTO>(data);
         }
 
-        public async Task DeleteAsync(Guid id)
+        public virtual async Task DeleteAsync(Guid id)
         {
             TDTO itemDTO = await GetAsync(id);
             T item = _mapper.Map<T>(itemDTO);
             await _dataRepository.Delete(item);
         }
 
-        public async Task<List<TDTO>> GetAllAsync()
+        public virtual async Task<List<TDTO>> GetAllAsync()
         {
             List<T> rs = await _dataRepository.GetAll();
             return _mapper.Map<List<TDTO>>(rs);
         }
 
-        public async Task<TDTO> GetAsync(Guid id)
+        public virtual async Task<TDTO> GetAsync(Guid id)
         {
             T item = await _dataRepository.Get(id);
             return _mapper.Map<TDTO>(item);
         }
 
-        public async Task UpdateAsync<TUpdateDTO>(TUpdateDTO updateDTO, Guid id)
+        public virtual async Task UpdateAsync<TUpdateDTO>(TUpdateDTO updateDTO, Guid id)
         {
             T item = await _dataRepository.Get(id);
 
@@ -77,6 +77,7 @@ namespace BusinessLayer.Services
                     {
                         itemProperty.SetValue(item, value);
                     }
+                    System.Console.WriteLine("--------------------------- value: "+ value);
                 }
             }
 

@@ -25,13 +25,15 @@ builder.Services.AddDbContext<MorkContext>(options =>
     options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
 });
 
+builder.Services.AddScoped(typeof(IDataRepository<>), typeof(DataRepository<>));
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IHouseRepository, HouseRepository>();
-builder.Services.AddScoped(typeof(IDataRepository<>), typeof(DataRepository<>));
+builder.Services.AddScoped<IRoomRepository, RoomRepository>();
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 builder.Services.AddScoped<IAuthenService, AuthenService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IHouseService, HouseService>();
+builder.Services.AddScoped<IRoomService, RoomService>();
 
 builder.Services.AddAuthentication(
     JwtBearerDefaults.AuthenticationScheme

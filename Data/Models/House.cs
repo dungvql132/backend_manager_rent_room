@@ -4,11 +4,11 @@ namespace DataLayer.Models
 {
     public class House : BaseModelUser
     {
-        public string HouseName {get; set;}
-        public string Information {get; set;}
-        public string Village {get; set;}
-        public float PowerPrice {get; set;}
-        public float WaterPrice {get; set;}
+        public string HouseName { get; set; }
+        public string Information { get; set; }
+        public string Village { get; set; }
+        public float PowerPrice { get; set; }
+        public float WaterPrice { get; set; }
         public Guid AddressId { get; set; }
 
         [ForeignKey("AddressId")]

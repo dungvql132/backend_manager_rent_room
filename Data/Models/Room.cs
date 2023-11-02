@@ -14,10 +14,10 @@ namespace DataLayer.Models
         public int FloorNumber { get; set; }
 
         [Column(TypeName = "int")]
-        public RoomStatus Status {get;set;}
+        public RoomStatus Status { get; set; }
 
         [Column(TypeName = "int")]
-        public RoomType Type {get;set;}
+        public RoomType Type { get; set; }
 
 
         public Guid HouseId { get; set; }
@@ -27,5 +27,11 @@ namespace DataLayer.Models
 
         public ICollection<RoomImage> RoomImages { get; set; }
         public ICollection<RoomHistory> RoomHistories { get; set; }
+
+        public override string ToString()
+        {
+            return $"RoomId: {Id}, RoomName: {RoomName}, Price: {Price}, Information: {Information}, Area: {Area}, MaxAmountOfPeople: {MaxAmountOfPeople}, CurrentAmountOfPeople: {CurrentAmountOfPeople}, FloorNumber: {FloorNumber}, Status: {Status}, Type: {Type}, HouseId: {HouseId}";
+        }
+
     }
 }

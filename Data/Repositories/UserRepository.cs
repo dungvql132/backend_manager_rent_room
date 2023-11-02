@@ -1,4 +1,5 @@
 ﻿using DataLayer.Database;
+using DataLayer.Filter;
 using DataLayer.Interfaces;
 using DataLayer.Models;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,15 @@ namespace DataLayer.Repositories
             return await _dbset.FirstOrDefaultAsync(
                 (s => s.Email == email && s.Password == password)
             );
+        }
+
+        public async Task<List<User>> GetAll(FilterUser filterUser)
+        {
+            var users = _dbset.AsQueryable();
+            if(filterUser.DisplayName != null){
+                users = users.Where(x => x.DisplayName.Contains(filterUser.DisplayName));
+            }
+            return await users.ToListAsync();
         }
     }
 }

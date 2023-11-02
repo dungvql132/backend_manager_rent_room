@@ -9,6 +9,7 @@ namespace BusinessLayer.AutoMapper
         public AutoMapperProfiles(){
             CreateMap<UserDTO,User>().ReverseMap();
             CreateMap<HouseDTO,House>().ReverseMap();
+            CreateMap<RoomDTO,Room>().ReverseMap();
         }
     }
 }

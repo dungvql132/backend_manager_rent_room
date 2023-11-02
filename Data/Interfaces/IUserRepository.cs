@@ -1,3 +1,4 @@
+using DataLayer.Filter;
 using DataLayer.Models;
 
 namespace DataLayer.Interfaces
@@ -6,5 +7,6 @@ namespace DataLayer.Interfaces
     {
         Task<User> Find(string email);
         Task<User> Find(string email, string password);
+        Task<List<User>> GetAll(FilterUser filterUser);
     }
 }

@@ -26,10 +26,10 @@ namespace test.Controllers
         [HttpGet]
         [ValidateModel]
         [CustomAuthorize(Role.Staff, Role.Landlord, Role.Admin)]
-        public async Task<List<HouseDTO>> GetAll()
+        public async Task<List<HouseDTO>> GetAll([FromQuery] FilterHouseDTO query)
         {
             // string email = House.FindFirst(ClaimTypes.Email).Value;
-            var houses = await _houseService.GetAllAsync();
+            var houses = await _houseService.GetAllAsync(query);
             return houses;
         }
 
@@ -56,28 +56,22 @@ namespace test.Controllers
 
         [HttpPut]
         [Route("{id:Guid}")]
-        [CustomAuthorize(Role.Staff, Role.Landlord, Role.Admin)]
+        [CustomAuthorize(Role.Landlord, Role.Admin)]
         public async Task<IActionResult> Update(
             [FromRoute] Guid id,
             [FromBody] HouseUpdateDTO houseUpdateDTO
         )
         {
-            // string role = User.FindFirst(ClaimTypes.Role).Value;
-            // string email = User.FindFirst(ClaimTypes.Email).Value;
-            // if (role == ((int)Role.Admin).ToString())
-            // {
-            //     await _userService.UpdateAsync<UserUpdateDTO>(userUpdateDTO, id);
-            // }
-            // else
-            // {
-            //     UserDTO userDTO = await _userService.GetAsync(id);
-            //     if (userDTO.Email == email)
-            //     {
-            //         await _userService.UpdateAsync<UserUpdateDTO>(userUpdateDTO, id);
-            //     }else{
-            //         throw new UnauthorizedAccessException("Only update yourself");
-            //     }
-            // }
+            string role = User.FindFirst(ClaimTypes.Role).Value;
+            string email = User.FindFirst(ClaimTypes.Email).Value;
+            if (role == ((int)Role.Admin).ToString())
+            {
+                await _houseService.UpdateAsync<HouseUpdateDTO>(houseUpdateDTO, id);
+            }
+            else
+            {
+                await _houseService.UpdateAsync(houseUpdateDTO,id,email);
+            }
             return Ok();
         }
 

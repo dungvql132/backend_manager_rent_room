@@ -4,6 +4,7 @@ using DataLayer.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(MorkContext))]
-    partial class MorkContextModelSnapshot : ModelSnapshot
+    [Migration("20231102021638_SeedHouse")]
+    partial class SeedHouse
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -53,8 +56,8 @@ namespace Data.Migrations
                         {
                             Id = new Guid("11111111-1111-1111-1111-111111111111"),
                             Addresses = "123 Main St",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1930),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1933),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1046),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1050),
                             Latitude = 40.712800000000001,
                             Longitude = -74.006
                         },
@@ -62,8 +65,8 @@ namespace Data.Migrations
                         {
                             Id = new Guid("22222222-2222-2222-2222-222222222222"),
                             Addresses = "456 Elm St",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1952),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1952),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1077),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1077),
                             Latitude = 35.689500000000002,
                             Longitude = 139.6917
                         },
@@ -71,8 +74,8 @@ namespace Data.Migrations
                         {
                             Id = new Guid("33333333-3333-3333-3333-333333333333"),
                             Addresses = "789 Oak St",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1954),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1955),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1080),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1080),
                             Latitude = 51.507399999999997,
                             Longitude = -0.1278
                         },
@@ -80,8 +83,8 @@ namespace Data.Migrations
                         {
                             Id = new Guid("44444444-4444-4444-4444-444444444444"),
                             Addresses = "101 Maple St",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1957),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1957),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1094),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1095),
                             Latitude = 52.520000000000003,
                             Longitude = 13.404999999999999
                         },
@@ -89,8 +92,8 @@ namespace Data.Migrations
                         {
                             Id = new Guid("55555555-5555-5555-5555-555555555555"),
                             Addresses = "202 Birch St",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1959),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1960),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1098),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1098),
                             Latitude = 48.8566,
                             Longitude = 2.3521999999999998
                         },
@@ -98,8 +101,8 @@ namespace Data.Migrations
                         {
                             Id = new Guid("66666666-6666-6666-6666-666666666666"),
                             Addresses = "303 Cedar St",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1961),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1961),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1100),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1100),
                             Latitude = 37.774900000000002,
                             Longitude = -122.4194
                         },
@@ -107,8 +110,8 @@ namespace Data.Migrations
                         {
                             Id = new Guid("77777777-7777-7777-7777-777777777777"),
                             Addresses = "404 Pine St",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1964),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1964),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1103),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1103),
                             Latitude = 34.052199999999999,
                             Longitude = -118.2437
                         },
@@ -116,8 +119,8 @@ namespace Data.Migrations
                         {
                             Id = new Guid("88888888-8888-8888-8888-888888888888"),
                             Addresses = "505 Spruce St",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1978),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1978),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1105),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1105),
                             Latitude = 41.878100000000003,
                             Longitude = -87.629800000000003
                         },
@@ -125,8 +128,8 @@ namespace Data.Migrations
                         {
                             Id = new Guid("99999999-9999-9999-9999-999999999999"),
                             Addresses = "606 Redwood St",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1980),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1980),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1106),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1107),
                             Latitude = 51.165700000000001,
                             Longitude = 10.451499999999999
                         },
@@ -134,8 +137,8 @@ namespace Data.Migrations
                         {
                             Id = new Guid("aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"),
                             Addresses = "707 Sequoia St",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1982),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1982),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1108),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1108),
                             Latitude = 35.682839000000001,
                             Longitude = 139.759455
                         },
@@ -143,8 +146,8 @@ namespace Data.Migrations
                         {
                             Id = new Guid("bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb"),
                             Addresses = "808 Cedar St",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1983),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1984),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1110),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1110),
                             Latitude = 40.712800000000001,
                             Longitude = -74.006
                         },
@@ -152,8 +155,8 @@ namespace Data.Migrations
                         {
                             Id = new Guid("cccccccc-cccc-cccc-cccc-cccccccccccc"),
                             Addresses = "909 Pine St",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1985),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1985),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1114),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1114),
                             Latitude = 35.689500000000002,
                             Longitude = 139.6917
                         },
@@ -161,8 +164,8 @@ namespace Data.Migrations
                         {
                             Id = new Guid("dddddddd-dddd-dddd-dddd-dddddddddddd"),
                             Addresses = "1010 Oak St",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1987),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1987),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1116),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1117),
                             Latitude = 51.507399999999997,
                             Longitude = -0.1278
                         },
@@ -170,8 +173,8 @@ namespace Data.Migrations
                         {
                             Id = new Guid("eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee"),
                             Addresses = "1111 Elm St",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1989),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1989),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1118),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1119),
                             Latitude = 52.520000000000003,
                             Longitude = 13.404999999999999
                         },
@@ -179,8 +182,8 @@ namespace Data.Migrations
                         {
                             Id = new Guid("ffffffff-ffff-ffff-ffff-ffffffffffff"),
                             Addresses = "1212 Birch St",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1990),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(1991),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1120),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1120),
                             Latitude = 48.8566,
                             Longitude = 2.3521999999999998
                         });
@@ -217,80 +220,80 @@ namespace Data.Migrations
                             Id = new Guid("11111111-1111-1111-1111-111111111111"),
                             AddressId = new Guid("11111111-1111-1111-1111-111111111111"),
                             CampusName = "Campus 1",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2136),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2136)
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1447),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1447)
                         },
                         new
                         {
                             Id = new Guid("22222222-2222-2222-2222-222222222222"),
                             AddressId = new Guid("22222222-2222-2222-2222-222222222222"),
                             CampusName = "Campus 2",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2139),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2140)
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1450),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1450)
                         },
                         new
                         {
                             Id = new Guid("33333333-3333-3333-3333-333333333333"),
                             AddressId = new Guid("33333333-3333-3333-3333-333333333333"),
                             CampusName = "Campus 3",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2141),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2142)
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1452),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1453)
                         },
                         new
                         {
                             Id = new Guid("44444444-4444-4444-4444-444444444444"),
                             AddressId = new Guid("44444444-4444-4444-4444-444444444444"),
                             CampusName = "Campus 4",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2144),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2144)
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1454),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1455)
                         },
                         new
                         {
                             Id = new Guid("55555555-5555-5555-5555-555555555555"),
                             AddressId = new Guid("55555555-5555-5555-5555-555555555555"),
                             CampusName = "Campus 5",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2146),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2146)
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1458),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1458)
                         },
                         new
                         {
                             Id = new Guid("66666666-6666-6666-6666-666666666666"),
                             AddressId = new Guid("66666666-6666-6666-6666-666666666666"),
                             CampusName = "Campus 6",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2148),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2148)
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1460),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1460)
                         },
                         new
                         {
                             Id = new Guid("77777777-7777-7777-7777-777777777777"),
                             AddressId = new Guid("77777777-7777-7777-7777-777777777777"),
                             CampusName = "Campus 7",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2150),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2150)
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1462),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1462)
                         },
                         new
                         {
                             Id = new Guid("88888888-8888-8888-8888-888888888888"),
                             AddressId = new Guid("88888888-8888-8888-8888-888888888888"),
                             CampusName = "Campus 8",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2152),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2152)
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1464),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1465)
                         },
                         new
                         {
                             Id = new Guid("99999999-9999-9999-9999-999999999999"),
                             AddressId = new Guid("99999999-9999-9999-9999-999999999999"),
                             CampusName = "Campus 9",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2155),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2155)
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1466),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1467)
                         },
                         new
                         {
                             Id = new Guid("aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"),
                             AddressId = new Guid("aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"),
                             CampusName = "Campus 10",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2157),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2157)
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1468),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1469)
                         });
                 });
 
@@ -359,11 +362,11 @@ namespace Data.Migrations
                             Id = new Guid("11111111-1111-1111-1111-111111111111"),
                             AddressId = new Guid("11111111-1111-1111-1111-111111111111"),
                             CampusId = new Guid("33333333-3333-3333-3333-333333333333"),
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2212),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1538),
                             HouseName = "House 1",
                             Information = "Information for House 1",
                             LandLordId = new Guid("33333333-3333-3333-3333-333333333333"),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2212),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1539),
                             PowerPrice = 100f,
                             Village = "Village 1",
                             WaterPrice = 50f
@@ -373,11 +376,11 @@ namespace Data.Migrations
                             Id = new Guid("22222222-2222-2222-2222-222222222222"),
                             AddressId = new Guid("22222222-2222-2222-2222-222222222222"),
                             CampusId = new Guid("22222222-2222-2222-2222-222222222222"),
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2218),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1546),
                             HouseName = "House 2",
                             Information = "Information for House 2",
                             LandLordId = new Guid("33333333-3333-3333-3333-333333333333"),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2219),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1546),
                             PowerPrice = 120f,
                             Village = "Village 2",
                             WaterPrice = 55f
@@ -387,11 +390,11 @@ namespace Data.Migrations
                             Id = new Guid("33333333-3333-3333-3333-333333333333"),
                             AddressId = new Guid("33333333-3333-3333-3333-333333333333"),
                             CampusId = new Guid("44444444-4444-4444-4444-444444444444"),
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2223),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1550),
                             HouseName = "House 3",
                             Information = "Information for House 3",
                             LandLordId = new Guid("33333333-3333-3333-3333-333333333333"),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2224),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1550),
                             PowerPrice = 90f,
                             Village = "Village 3",
                             WaterPrice = 40f
@@ -401,11 +404,11 @@ namespace Data.Migrations
                             Id = new Guid("44444444-4444-4444-4444-444444444444"),
                             AddressId = new Guid("44444444-4444-4444-4444-444444444444"),
                             CampusId = new Guid("66666666-6666-6666-6666-666666666666"),
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2227),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1553),
                             HouseName = "House 4",
                             Information = "Information for House 4",
                             LandLordId = new Guid("33333333-3333-3333-3333-333333333333"),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2227),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1554),
                             PowerPrice = 110f,
                             Village = "Village 4",
                             WaterPrice = 52f
@@ -415,11 +418,11 @@ namespace Data.Migrations
                             Id = new Guid("55555555-5555-5555-5555-555555555555"),
                             AddressId = new Guid("55555555-5555-5555-5555-555555555555"),
                             CampusId = new Guid("22222222-2222-2222-2222-222222222222"),
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2231),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1557),
                             HouseName = "House 5",
                             Information = "Information for House 5",
                             LandLordId = new Guid("33333333-3333-3333-3333-333333333333"),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2231),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1557),
                             PowerPrice = 105f,
                             Village = "Village 5",
                             WaterPrice = 48f
@@ -429,11 +432,11 @@ namespace Data.Migrations
                             Id = new Guid("66666666-6666-6666-6666-666666666666"),
                             AddressId = new Guid("66666666-6666-6666-6666-666666666666"),
                             CampusId = new Guid("66666666-6666-6666-6666-666666666666"),
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2234),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1560),
                             HouseName = "House 6",
                             Information = "Information for House 6",
                             LandLordId = new Guid("33333333-3333-3333-3333-333333333333"),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2234),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1561),
                             PowerPrice = 95f,
                             Village = "Village 6",
                             WaterPrice = 45f
@@ -443,11 +446,11 @@ namespace Data.Migrations
                             Id = new Guid("77777777-7777-7777-7777-777777777777"),
                             AddressId = new Guid("77777777-7777-7777-7777-777777777777"),
                             CampusId = new Guid("66666666-6666-6666-6666-666666666666"),
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2238),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1566),
                             HouseName = "House 7",
                             Information = "Information for House 7",
                             LandLordId = new Guid("33333333-3333-3333-3333-333333333333"),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2239),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1566),
                             PowerPrice = 98f,
                             Village = "Village 7",
                             WaterPrice = 47f
@@ -457,11 +460,11 @@ namespace Data.Migrations
                             Id = new Guid("88888888-8888-8888-8888-888888888888"),
                             AddressId = new Guid("88888888-8888-8888-8888-888888888888"),
                             CampusId = new Guid("66666666-6666-6666-6666-666666666666"),
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2242),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1570),
                             HouseName = "House 8",
                             Information = "Information for House 8",
                             LandLordId = new Guid("33333333-3333-3333-3333-333333333333"),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2242),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1570),
                             PowerPrice = 103f,
                             Village = "Village 8",
                             WaterPrice = 51f
@@ -471,11 +474,11 @@ namespace Data.Migrations
                             Id = new Guid("99999999-9999-9999-9999-999999999999"),
                             AddressId = new Guid("99999999-9999-9999-9999-999999999999"),
                             CampusId = new Guid("44444444-4444-4444-4444-444444444444"),
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2245),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1573),
                             HouseName = "House 9",
                             Information = "Information for House 9",
                             LandLordId = new Guid("22222222-2222-2222-2222-222222222222"),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2246),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1574),
                             PowerPrice = 97f,
                             Village = "Village 9",
                             WaterPrice = 49f
@@ -485,11 +488,11 @@ namespace Data.Migrations
                             Id = new Guid("aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"),
                             AddressId = new Guid("aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"),
                             CampusId = new Guid("66666666-6666-6666-6666-666666666666"),
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2249),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1577),
                             HouseName = "House 10",
                             Information = "Information for House 10",
                             LandLordId = new Guid("22222222-2222-2222-2222-222222222222"),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2249),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1577),
                             PowerPrice = 105f,
                             Village = "Village 10",
                             WaterPrice = 55f
@@ -499,11 +502,11 @@ namespace Data.Migrations
                             Id = new Guid("bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb"),
                             AddressId = new Guid("bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb"),
                             CampusId = new Guid("66666666-6666-6666-6666-666666666666"),
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2278),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1580),
                             HouseName = "House 11",
                             Information = "Information for House 11",
                             LandLordId = new Guid("22222222-2222-2222-2222-222222222222"),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2278),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1581),
                             PowerPrice = 103f,
                             Village = "Village 11",
                             WaterPrice = 53f
@@ -513,11 +516,11 @@ namespace Data.Migrations
                             Id = new Guid("cccccccc-cccc-cccc-cccc-cccccccccccc"),
                             AddressId = new Guid("cccccccc-cccc-cccc-cccc-cccccccccccc"),
                             CampusId = new Guid("66666666-6666-6666-6666-666666666666"),
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2281),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1584),
                             HouseName = "House 12",
                             Information = "Information for House 12",
                             LandLordId = new Guid("22222222-2222-2222-2222-222222222222"),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2282),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1584),
                             PowerPrice = 98f,
                             Village = "Village 12",
                             WaterPrice = 48f
@@ -527,11 +530,11 @@ namespace Data.Migrations
                             Id = new Guid("dddddddd-dddd-dddd-dddd-dddddddddddd"),
                             AddressId = new Guid("dddddddd-dddd-dddd-dddd-dddddddddddd"),
                             CampusId = new Guid("66666666-6666-6666-6666-666666666666"),
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2285),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1588),
                             HouseName = "House 13",
                             Information = "Information for House 13",
                             LandLordId = new Guid("22222222-2222-2222-2222-222222222222"),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2285),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1588),
                             PowerPrice = 96f,
                             Village = "Village 13",
                             WaterPrice = 46f
@@ -541,11 +544,11 @@ namespace Data.Migrations
                             Id = new Guid("eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee"),
                             AddressId = new Guid("eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee"),
                             CampusId = new Guid("66666666-6666-6666-6666-666666666666"),
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2288),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1591),
                             HouseName = "House 14",
                             Information = "Information for House 14",
                             LandLordId = new Guid("22222222-2222-2222-2222-222222222222"),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2289),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1592),
                             PowerPrice = 99f,
                             Village = "Village 14",
                             WaterPrice = 49f
@@ -555,11 +558,11 @@ namespace Data.Migrations
                             Id = new Guid("ffffffff-ffff-ffff-ffff-ffffffffffff"),
                             AddressId = new Guid("ffffffff-ffff-ffff-ffff-ffffffffffff"),
                             CampusId = new Guid("22222222-2222-2222-2222-222222222222"),
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2292),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1597),
                             HouseName = "House 15",
                             Information = "Information for House 15",
                             LandLordId = new Guid("22222222-2222-2222-2222-222222222222"),
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2292),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1597),
                             PowerPrice = 101f,
                             Village = "Village 15",
                             WaterPrice = 51f
@@ -704,168 +707,6 @@ namespace Data.Migrations
                     b.HasIndex("LastModifiedBy");
 
                     b.ToTable("Rooms");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("11111111-1111-1111-1111-111111111111"),
-                            Area = "100 sq. ft.",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2314),
-                            CurrentAmountOfPeople = 1,
-                            FloorNumber = 1,
-                            HouseId = new Guid("aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"),
-                            Information = "Information for Room 1",
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2314),
-                            MaxAmountOfPeople = 2,
-                            Price = 100f,
-                            RoomName = "Room 1",
-                            Status = 0,
-                            Type = 0
-                        },
-                        new
-                        {
-                            Id = new Guid("22222222-2222-2222-2222-222222222222"),
-                            Area = "110 sq. ft.",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2318),
-                            CurrentAmountOfPeople = 1,
-                            FloorNumber = 2,
-                            HouseId = new Guid("aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"),
-                            Information = "Information for Room 2",
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2318),
-                            MaxAmountOfPeople = 3,
-                            Price = 120f,
-                            RoomName = "Room 2",
-                            Status = 0,
-                            Type = 1
-                        },
-                        new
-                        {
-                            Id = new Guid("33333333-3333-3333-3333-333333333333"),
-                            Area = "95 sq. ft.",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2321),
-                            CurrentAmountOfPeople = 1,
-                            FloorNumber = 1,
-                            HouseId = new Guid("aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"),
-                            Information = "Information for Room 3",
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2321),
-                            MaxAmountOfPeople = 1,
-                            Price = 90f,
-                            RoomName = "Room 3",
-                            Status = 0,
-                            Type = 0
-                        },
-                        new
-                        {
-                            Id = new Guid("44444444-4444-4444-4444-444444444444"),
-                            Area = "105 sq. ft.",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2325),
-                            CurrentAmountOfPeople = 1,
-                            FloorNumber = 2,
-                            HouseId = new Guid("aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"),
-                            Information = "Information for Room 4",
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2326),
-                            MaxAmountOfPeople = 2,
-                            Price = 110f,
-                            RoomName = "Room 4",
-                            Status = 0,
-                            Type = 1
-                        },
-                        new
-                        {
-                            Id = new Guid("55555555-5555-5555-5555-555555555555"),
-                            Area = "100 sq. ft.",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2328),
-                            CurrentAmountOfPeople = 2,
-                            FloorNumber = 3,
-                            HouseId = new Guid("aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"),
-                            Information = "Information for Room 5",
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2328),
-                            MaxAmountOfPeople = 2,
-                            Price = 105f,
-                            RoomName = "Room 5",
-                            Status = 0,
-                            Type = 0
-                        },
-                        new
-                        {
-                            Id = new Guid("66666666-6666-6666-6666-666666666666"),
-                            Area = "90 sq. ft.",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2331),
-                            CurrentAmountOfPeople = 1,
-                            FloorNumber = 3,
-                            HouseId = new Guid("88888888-8888-8888-8888-888888888888"),
-                            Information = "Information for Room 6",
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2331),
-                            MaxAmountOfPeople = 1,
-                            Price = 95f,
-                            RoomName = "Room 6",
-                            Status = 0,
-                            Type = 0
-                        },
-                        new
-                        {
-                            Id = new Guid("77777777-7777-7777-7777-777777777777"),
-                            Area = "95 sq. ft.",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2334),
-                            CurrentAmountOfPeople = 2,
-                            FloorNumber = 4,
-                            HouseId = new Guid("88888888-8888-8888-8888-888888888888"),
-                            Information = "Information for Room 7",
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2334),
-                            MaxAmountOfPeople = 2,
-                            Price = 98f,
-                            RoomName = "Room 7",
-                            Status = 0,
-                            Type = 1
-                        },
-                        new
-                        {
-                            Id = new Guid("88888888-8888-8888-8888-888888888888"),
-                            Area = "100 sq. ft.",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2337),
-                            CurrentAmountOfPeople = 2,
-                            FloorNumber = 4,
-                            HouseId = new Guid("88888888-8888-8888-8888-888888888888"),
-                            Information = "Information for Room 8",
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2337),
-                            MaxAmountOfPeople = 2,
-                            Price = 103f,
-                            RoomName = "Room 8",
-                            Status = 0,
-                            Type = 0
-                        },
-                        new
-                        {
-                            Id = new Guid("99999999-9999-9999-9999-999999999999"),
-                            Area = "95 sq. ft.",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2340),
-                            CurrentAmountOfPeople = 1,
-                            FloorNumber = 5,
-                            HouseId = new Guid("88888888-8888-8888-8888-888888888888"),
-                            Information = "Information for Room 9",
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2340),
-                            MaxAmountOfPeople = 1,
-                            Price = 97f,
-                            RoomName = "Room 9",
-                            Status = 0,
-                            Type = 0
-                        },
-                        new
-                        {
-                            Id = new Guid("aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"),
-                            Area = "100 sq. ft.",
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2342),
-                            CurrentAmountOfPeople = 2,
-                            FloorNumber = 5,
-                            HouseId = new Guid("88888888-8888-8888-8888-888888888888"),
-                            Information = "Information for Room 10",
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2343),
-                            MaxAmountOfPeople = 2,
-                            Price = 105f,
-                            RoomName = "Room 10",
-                            Status = 0,
-                            Type = 1
-                        });
                 });
 
             modelBuilder.Entity("DataLayer.Models.RoomHistory", b =>
@@ -996,10 +837,10 @@ namespace Data.Migrations
                         {
                             Id = new Guid("11111111-1111-1111-1111-111111111111"),
                             Active = true,
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2182),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1501),
                             DisplayName = "staff",
                             Email = "staff@gmail.com",
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2182),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1501),
                             Password = "123456",
                             PhoneNumber = "1234567890",
                             ProfileImageLink = "user1.jpg",
@@ -1009,10 +850,10 @@ namespace Data.Migrations
                         {
                             Id = new Guid("22222222-2222-2222-2222-222222222222"),
                             Active = true,
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2187),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1509),
                             DisplayName = "landlord1",
                             Email = "landlord1@gmail.com",
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2187),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1509),
                             Password = "123456",
                             PhoneNumber = "9876543210",
                             ProfileImageLink = "user2.jpg",
@@ -1022,10 +863,10 @@ namespace Data.Migrations
                         {
                             Id = new Guid("33333333-3333-3333-3333-333333333333"),
                             Active = true,
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2190),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1513),
                             DisplayName = "landlord2",
                             Email = "landlord2@gmail.com",
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2190),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1513),
                             Password = "123456",
                             PhoneNumber = "9876543210",
                             ProfileImageLink = "user2.jpg",
@@ -1035,10 +876,10 @@ namespace Data.Migrations
                         {
                             Id = new Guid("44444444-4444-4444-4444-444444444444"),
                             Active = true,
-                            CreateDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2192),
+                            CreateDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1516),
                             DisplayName = "User 3",
                             Email = "admin@admin.com",
-                            LastModifiedDate = new DateTime(2023, 11, 2, 10, 17, 29, 121, DateTimeKind.Utc).AddTicks(2193),
+                            LastModifiedDate = new DateTime(2023, 11, 2, 2, 16, 38, 155, DateTimeKind.Utc).AddTicks(1516),
                             Password = "123456",
                             PhoneNumber = "5555555555",
                             ProfileImageLink = "user3.jpg",
