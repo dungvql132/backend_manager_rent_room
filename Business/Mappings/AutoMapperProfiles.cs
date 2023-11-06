@@ -10,6 +10,7 @@ namespace BusinessLayer.AutoMapper
             CreateMap<UserDTO,User>().ReverseMap();
             CreateMap<HouseDTO,House>().ReverseMap();
             CreateMap<RoomDTO,Room>().ReverseMap();
+            CreateMap<RateDTO,Rate>().ReverseMap();
         }
     }
 }

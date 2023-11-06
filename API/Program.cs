@@ -57,9 +57,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-// // Register the custom error handling middleware
-// app.UseHsts();
-// app.UseMiddleware<CustomErrorHandlingMiddleware>();
+
+app.UseHsts();
+app.UseMiddleware<CustomErrorHandlingMiddleware>();
 
 app.UseHttpsRedirection();
 

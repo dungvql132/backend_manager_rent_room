@@ -77,7 +77,6 @@ namespace BusinessLayer.Services
                     {
                         itemProperty.SetValue(item, value);
                     }
-                    System.Console.WriteLine("--------------------------- value: "+ value);
                 }
             }
 

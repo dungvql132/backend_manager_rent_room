@@ -28,7 +28,6 @@ namespace test.Controllers
         [CustomAuthorize(Role.Staff, Role.Landlord, Role.Admin)]
         public async Task<List<HouseDTO>> GetAll([FromQuery] FilterHouseDTO query)
         {
-            // string email = House.FindFirst(ClaimTypes.Email).Value;
             var houses = await _houseService.GetAllAsync(query);
             return houses;
         }
@@ -39,7 +38,6 @@ namespace test.Controllers
         [CustomAuthorize(Role.Staff, Role.Landlord, Role.Admin)]
         public async Task<HouseDTO> Get([FromRoute] Guid id)
         {
-            // string email = House.FindFirst(ClaimTypes.Email).Value;
             var house = await _houseService.GetAsync(id);
             return house;
         }

@@ -7,6 +7,8 @@ namespace BusinessLayer.DTOs
         [Required]
         public string? Email { get; set; }
         [Required]
+        [MinLength(8, ErrorMessage = "Password must be at least 8 characters long.")]
+        [MaxLength(20, ErrorMessage = "Password cannot be more than 20 characters.")]
         public string? Password { get; set; }
         public string? DisplayName { get; set; }
         public string? ProfileImageLink { get; set; }
@@ -17,6 +19,7 @@ namespace BusinessLayer.DTOs
     public class LoginUserDTO
     {
         [Required]
+        [EmailAddress]
         public string Email { get; set; }
         [Required]
         public string? Password { get; set; }
